@@ -98,7 +98,7 @@ public class Artikel
      */
     public void setBezeichnung(String neueBezeichnung)
     {
-        check (((!neueBezeichnung.trim().equals("") || neueBezeichnung != null)), msg1);
+        check (((!neueBezeichnung.trim().equals("") && neueBezeichnung != null)), msg1);
         artikelBezeichnung = neueBezeichnung;
     }
      
